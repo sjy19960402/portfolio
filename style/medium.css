@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@media screen and (min-height:801px) and (max-height:980px){
+
+    /* 프로필 */
+    #profile{
+        padding-bottom: 200px;
+    }
+    .wrap{
+        transform: translateY(100px);
+    }
+    .p_title > .big{font-size: 10rem;}
+    svg{transform: translate(100px,-280px);}
+    .p_left > a{transform: translateY(-300px);}
+
+    /* 앱퍼블리싱 */
+    .a_wrap{
+        transform: translateY(-330px);
+    }
+    .app img{
+        height: 900px;
+    }
+
+    /* 웹퍼블리싱 */
+    #web{
+        transform: translateY(-180px);
+        padding-bottom: 0;
+    }
+    #tab_con ul .con{height: 540px;}
+    .c01, .c02{padding: 50px 20px;}
+
+    /* 디자인 */
+    #design{
+        width: 100%;
+        transform: translateY(-100px);
+    }
+    
+    /* 이메일 */
+    #contact{
+        transform: translateY(0px);
+        padding-bottom: 200px;
+    }
+    /* 에필로그 */
+    .last_bg .b_img{top: -760px;}
+    .last_bg p{
+        font-size: 24px;
+        transform: translateY(100px);
+    }
+}
