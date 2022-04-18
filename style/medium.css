@@ -18,12 +18,12 @@
         transform: translateY(-330px);
     }
     .app img{
-        height: 900px;
+        height: 800px;
     }
 
     /* 웹퍼블리싱 */
     #web{
-        transform: translateY(-180px);
+        transform: translateY(-220px);
         padding-bottom: 0;
     }
     #tab_con ul .con{height: 540px;}
@@ -32,12 +32,12 @@
     /* 디자인 */
     #design{
         width: 100%;
-        transform: translateY(-100px);
+        transform: translateY(-140px);
     }
-    
+
     /* 이메일 */
     #contact{
-        transform: translateY(0px);
+        transform: translateY(-50px);
         padding-bottom: 200px;
     }
     /* 에필로그 */

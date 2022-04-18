@@ -744,12 +744,20 @@ path {
   text-align: left;
   width: 30%;
 }
-.c_04 .or_img{
-  width: 70%;
-}
-.c_04 .or_img img{width: 100%;}
-.pocari_img{position: relative;}
+.c04 .ol_img p{margin-top: 20px;}
 
+.c04 .or_img{
+  width: 65%;
+  overflow: hidden;
+}
+.pocari_img{
+  position: relative;
+}
+.swiper-pagination{
+  position: absolute;
+  top: 90%;
+  z-index: 1000;
+}
 .c04 .or_img figcaption:before,
 .c04 .or_img figcaption:after{
   width: 2000px;
@@ -758,9 +766,7 @@ path {
   bottom: 25px;
   left: 25px;
 }
-.swiper-pagination{
-  position: absolute;
-}
+
 /* contact */
 #contact{
    width: 100%;
