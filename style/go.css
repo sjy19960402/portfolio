@@ -18,5 +18,16 @@ main > article{
 }
 main > article img{
     width: 100%;
+    margin-top: 50px;
     filter: drop-shadow(3px 3px 4px #333);
+}
+main > article p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+}
+main > article p span{
+    font-weight: bold;
+    color: rgb(47, 47, 177);
 }

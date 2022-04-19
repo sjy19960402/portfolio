@@ -16,10 +16,10 @@
 
     /* 앱퍼블리싱 */
     .a_wrap{
-        transform: translateY(-460px);
+        transform: translateY(-450px);
     }
     .app img{
-        height: 720px;
+        height: 780px;
     }
     
     /* 웹퍼블리싱 */
@@ -32,7 +32,6 @@
     
     /* 디자인 */
     #design{
-        width: 100%;
         transform: translateY(-360px);
     }
     /* 이메일 */

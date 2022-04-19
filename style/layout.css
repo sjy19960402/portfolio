@@ -230,7 +230,7 @@ main > .content{width: 100%; height: 100%;}
     background-size: cover;
     background-position: center;
     padding-top: 60px;
-    padding-bottom: 340px;
+    padding-bottom: 300px;
 }
 .wrap{
     width: 100%; height: 100%;
@@ -402,7 +402,7 @@ path {
 .a_wrap{
     width:100%; height: 100%;
     display: flex;
-    transform: translateY(-200px)
+    transform: translateY(-240px)
 }
  #app .app {
     width: 50%; height: 100%;
@@ -422,7 +422,7 @@ path {
   }
   .app img {
     opacity: 1;
-    height: 1030px;
+    height: 940px;
     -webkit-transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
@@ -467,6 +467,7 @@ path {
     color: #fff;
     display: inline-block;
     margin-right: 10px;
+    transition: 0.3s;
   }
   /* app영역 hover시 효과 */
   .app .read-more:hover {
@@ -528,7 +529,7 @@ path {
     color: #fff !important;
 }
 #tab_con .con{
-  background: rgba(236,152,168,0.2);
+  background: rgba(255,255,255,.6);
 }
 
 /* 탭콘텐츠 : 왼쪽 메인 설명 */
@@ -566,6 +567,7 @@ path {
     display: inline-block;
     margin: 30px 20px 20px 0px;
     box-shadow: 2px 2px 4px #ccc;
+    transition: 0.3s;
 }
 #tab_con .more:hover{
   background-color: #000;
@@ -720,7 +722,7 @@ path {
 /* 3. 캐스퍼 콘텐츠 박스 수정 */
 .c03, .c04{
   width: 100%;
-  padding: 40px 20px; box-sizing: border-box;
+  padding: 80px 20px; box-sizing: border-box;
 }
 .c03 .ol_img{
   width: 35%;
@@ -748,10 +750,40 @@ path {
 
 .c04 .or_img{
   width: 65%;
-  overflow: hidden;
 }
-.pocari_img{
-  position: relative;
+.c04 .img {
+  position: absolute; 
+  width:100%;
+  -webkit-transition: opacity 1s ease-in-out; 
+  -moz-transition: opacity 1s ease-in-out; 
+  -o-transition: opacity 1s ease-in-out; 
+  transition: opacity 1s ease-in-out; 
+  opacity: 0; 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; 
+  filter: alpha(opacity=0); 
+}
+.c04 .img img{height: 432.3px;}
+.c04 .img:first-child {opacity: 1;}
+.c04 .img_btn{
+  transform: translate(50px,20px);
+}
+.c04 .img_btn button{
+  display: inline-block;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.c04 .img_btn button:hover{
+  background-color: #a4d3ff;
+  color: #fff;
 }
 .swiper-pagination{
   position: absolute;
@@ -770,8 +802,8 @@ path {
 /* contact */
 #contact{
    width: 100%;
-   transform: translateY(280px);
-   padding-bottom: 400px;
+   transform: translateY(100px);
+   padding-bottom: 300px;
 }
 .c_all{
   width: 1200px; height: 100%;
@@ -881,4 +913,17 @@ form:hover input:hover[type=submit] {color:#3140ca;}
     line-height: 24px;
     text-align: center;
     transform: translateY(40px);
+}
+.last_bg a{
+  width: 100px;
+    height: 100px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 40px; bottom: -150px;
+}
+.last_bg a img{
+  width: 120px;
+  transform: translate(-30px,20px);
 }

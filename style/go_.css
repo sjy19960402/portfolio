@@ -14,6 +14,16 @@ header > h1{
 }
 header h1 span{font-size: 36px; font-weight: bolder;}
 main{padding-bottom: 30px;}
+main > .info{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+main > .info span{
+    font-weight: bold;
+    color: rgb(82, 73, 201);
+}
 main > article{
     width: 1000px;
     margin: 0 auto;

@@ -17,8 +17,6 @@
     <!--1920*1080 이하 화면 최적화 -->
     <link rel="stylesheet" href="./style/small.css" type="text/css">
     <link rel="stylesheet" href="./style/medium.css" type="text/css">
-    <!-- #web .con4 적용 슬라이드 -->
-    <link rel="stylesheet" href="./style/swiper.css" type="text/css">
     <!-- js -->
     <script src="./script/prefixfree.min.js"></script>
     <script src="./script/jquery-3.6.0.js"></script>
@@ -281,11 +279,14 @@
                                     <p>&#39;POCARI SWEAT&#39;브랜드를 주제로 
                                         <br>두가지 버전의 사이트 제작
                                         <br>디자인&#44; 코딩 본인 100&#37;</p>
+                                        <div class="img_btn">
+                                            <button class="prev">prev</button>
+                                            <button class="next">next</button>
+                                        </div>
                                     </div>
                                     <div class="or_img">
-                                    <div class="swiper pocari_img">
-                                        <div class="swiper-wrapper">
-                                          <div class="swiper-slide">
+                                        <div class="imgBox">
+                                        <div class="img on">
                                         <img src="./img/pocari1.jpg" alt="화이트버전">
                                         <figcaption>
                                             <div>
@@ -297,8 +298,8 @@
                                      <a onclick="window.open('https://sjy19960402.github.io/pocari-sweat/')" title="포카리 화이트 홈페이지">
                                         </a>
                                     </div>
-                                    <div class="swiper-slide">
-                                     <img src="./img/pocari2.jpg" alt="블랙버전">
+                                    <div class="img">
+                                     <img src="./img/pocari_black.jpg" alt="블랙버전">
                                      <figcaption>
                                          <div>
                                          <h4>POCARI SWEAT</h4>
@@ -306,13 +307,10 @@
                                          </div>
                                      </figcaption>
                                      <!-- 사이트 이동 -->
-                                  <a onclick="window.open('https://sjy19960402.github.io/pocari-sweat/')" title="포카리 블랙 홈페이지">
+                                  <a onclick="window.open('https://sjy19960402.github.io/pocari-sweat02/')" title="포카리 블랙 홈페이지">
                                      </a>
-                                    </div>
+                                     </div>
                                 </div>
-                                    <!-- 페이지 위치를 표시하기 위한 컨트롤 버튼 나오게 하기 -->
-                                   <div class="swiper-pagination"></div>
-                            </div>
                             </div>
                             </div>
                         </li>
@@ -475,6 +473,10 @@
                       </div>
                       <div class="last_bg">
                         <img src="./img/a_top.png" alt="하단이미지" class="b_img">
+                        <a href="https://github.com/sjy19960402">
+                            <img src="./img/github.png" alt="깃허브아이콘"><br>
+                            Github
+                        </a>
                         <p>끝까지 봐주셔서 감사합니다&#33;
                             <br>Thank you for watching&#33;</p>
                         </div>
@@ -502,21 +504,5 @@
         });
     });
         </script>
-        <!-- 스와이퍼 슬라이드 -->
-    <script src="./script/swiper.js"></script>
-    <script>
-    var swiper = new Swiper(".pocari_img", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      }
-    });
-  </script>
 </body>
 </html>

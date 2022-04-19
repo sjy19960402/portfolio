@@ -3,7 +3,7 @@
 #design{
     width:80%; height: 100%;
     margin:0px auto;
-    transform: translateY(180px);
+    transform: translateY(160px);
     padding-bottom: 100px;
 }
 #design > ul{
