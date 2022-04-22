@@ -10,39 +10,44 @@
         transform: translateY(20px);
     }
     .p_left{transform: translateY(10px);}
-    .p_title > .big{font-size: 10rem;}
+    .p_title > .big{font-size: 8rem;}
     svg{transform: translate(100px,-350px);}
     .p_left > a{transform: translateY(-380px);}
 
+    .p_right{transform: translateY(-550px);}
+
     /* 앱퍼블리싱 */
     .a_wrap{
-        transform: translateY(-450px);
+        transform: translateY(-480px);
     }
     .app img{
-        height: 780px;
+        height: 720px;
     }
     
     /* 웹퍼블리싱 */
     #web{
-        transform: translateY(-380px);
+        transform: translateY(-420px);
         padding-bottom: 0;
     }
     #tab_con ul .con{height: 540px;}
-    .c01, .c02{padding: 50px 20px;}
+    .c01, .c02, .c03{padding: 50px 20px;}
+    .c04{padding: 50px 60px;}
     
     /* 디자인 */
     #design{
         transform: translateY(-360px);
+        width: 100%;
     }
     /* 이메일 */
     #contact{
-        transform: translateY(-300px);
+        transform: translateY(-140px);
         padding-bottom: 0;
     }
     /* 에필로그 */
     .last_bg .b_img{top: -760px;}
     .last_bg p{
         font-size: 24px;
-        transform: translateY(100px);
+        transform: translateY(50px);
+        padding-bottom: 50px;
     }
 }
