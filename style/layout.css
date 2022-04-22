@@ -599,28 +599,28 @@ path {
   width: 100%; object-fit: cover;
   backface-visibility: hidden;
 }
-.or_img figcaption{
+.or_img .figcaption{
   position: absolute;
   bottom: 25px;
   right: 25px;
   padding: 5px 10px 10px;
 }
 /* 탭콘텐츠 : or_img 마우스 오버시 효과 */
-.or_img figcaption:before,
-.or_img figcaption:after {
+.or_img .figcaption:before,
+.or_img .figcaption:after {
   height: 2px;
   width: 600px;
   position: absolute;
   content: '';
   background-color: #fff;
 }
-.or_img figcaption:before {
+.or_img .figcaption:before {
   top: 0;
   left: 0;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
-.or_img figcaption:after {
+.or_img .figcaption:after {
   bottom: 0;
   right: 0;
   -webkit-transform: translateX(-100%);
@@ -628,8 +628,8 @@ path {
 }
 .or_img:before,
 .or_img:after,
-.or_img figcaption:before,
-.or_img figcaption:after {
+.or_img .figcaption:before,
+.or_img .figcaption:after {
   position: absolute;
   content: '';
   background-color: #fff;
@@ -638,21 +638,21 @@ path {
   transition: all 0.4s ease-in;
   opacity: 0.8;
 }
-.or_img figcaption div:before,
-.or_img figcaption div:after {
+.or_img .figcaption div:before,
+.or_img .figcaption div:after {
   width: 2px;
   height: 600px;
   position: absolute;
   content: '';
   background-color: #fff;
 }
-.or_img figcaption div:before {
+.or_img .figcaption div:before {
   top: 0;
   left: 0;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
-.or_img figcaption div:after {
+.or_img .figcaption div:after {
   bottom: 0;
   right: 0;
   -webkit-transform: translateY(-100%);
@@ -690,21 +690,21 @@ path {
   -webkit-opacity: 0.5;
   opacity: 0.5;
 }
-.or_img:hover figcaption:before,
-.or_img.hover figcaption:before,
-.or_img:hover figcaption:after,
-.or_img.hover figcaption:after,
-.or_img:hover figcaption div:before,
-.or_img.hover figcaption div:before,
-.or_img:hover figcaption div:after,
-.or_img.hover figcaption div:after {
+.or_img:hover .figcaption:before,
+.or_img.hover .figcaption:before,
+.or_img:hover .figcaption:after,
+.or_img.hover .figcaption:after,
+.or_img:hover .figcaption div:before,
+.or_img.hover .figcaption div:before,
+.or_img:hover .figcaption div:after,
+.or_img.hover .figcaption div:after {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.or_img:hover figcaption:before,
-.or_img.hover figcaption:before,
-.or_img:hover figcaption:after,
-.or_img.hover figcaption:after {
+.or_img:hover .figcaption:before,
+.or_img.hover .figcaption:before,
+.or_img:hover .figcaption:after,
+.or_img.hover .figcaption:after {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
@@ -734,8 +734,8 @@ path {
 .c03 .or_img{
   width: 60%; height: 450px;
 }
-.c03 .or_img figcaption:before,
-.c03 .or_img figcaption:after{
+.c03 .or_img .figcaption:before,
+.c03 .or_img .figcaption:after{
   width: 1000px;
 }
 
