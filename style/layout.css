@@ -230,7 +230,7 @@ main > .content{width: 100%; height: 100%;}
     background-size: cover;
     background-position: center;
     padding-top: 60px;
-    padding-bottom: 300px;
+    padding-bottom: 380px;
 }
 .wrap{
     width: 100%; height: 100%;
@@ -353,17 +353,19 @@ path {
 
 /* 이력서 다운로드 btn */
 .p_right > .p_btn{
-    margin-top: 130px;
+  margin-top: 130px;
+  transform: translateX(-60px);
+  color: #fff;
+  animation: light infinite 2s;
+  font-size: 20px;
+}
+.p_btn{
+    position: relative;
     padding: 20px 100px;
-    font-size: 20px;
     font-weight: bold;
-    color: #fff;
     text-transform: uppercase;
     text-align: center;
-    position: relative;
     display:inline-block;
-    transform: translateX(-60px);
-    animation: light infinite 2s;
 }
 @keyframes light{
     0%{color: #fff;}
@@ -371,7 +373,7 @@ path {
     100%{color: #fff;}
   }
 .p_btn i{margin-right: 10px;}
-.p_right > .p_btn::before{
+.p_btn::before{
     content: "";
     position: absolute;
     top: 0;
@@ -386,7 +388,7 @@ path {
     opacity: 0;
     transition: all .3s
   }
-  .p_right > .p_btn:hover::before{
+  .p_btn:hover::before{
     opacity: 1;
     background-color: #929cf7;
     -webkit-transform: scaleX(1);
@@ -402,7 +404,7 @@ path {
 .a_wrap{
     width:100%; height: 100%;
     display: flex;
-    transform: translateY(-240px)
+    transform: translateY(-200px)
 }
  #app .app {
     width: 50%; height: 100%;
@@ -422,7 +424,7 @@ path {
   }
   .app img {
     opacity: 1;
-    height: 940px;
+    height: 1000px;
     -webkit-transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
@@ -518,7 +520,7 @@ path {
 }
 #tab_con ul .con{
     position: absolute;
-    width: 100%; height: 660px;
+    width: 100%; height: 620px;
     top: 50px; left: 0px;
     display: none;
     box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, .8);
@@ -533,7 +535,7 @@ path {
 }
 
 /* 탭콘텐츠 : 왼쪽 메인 설명 */
-.c01, .c02{
+.c01, .c02, .c03{
     width: 90%;
     padding: 100px 20px; box-sizing: border-box;
 }
@@ -708,7 +710,8 @@ path {
 }
 
 /* 1. 아웃백 사진 위치 조정 */
-.c01 .ol_img img{transform: translateY(-40px);}
+.c01 .ol_img {padding-bottom: 50px;}
+.c01 .ol_img img{transform: translateY(-30px);}
 
 /* 2. 에스쁘아 크기 조절 */
 .c02 .or_img{
@@ -720,10 +723,6 @@ path {
 }
 
 /* 3. 캐스퍼 콘텐츠 박스 수정 */
-.c03, .c04{
-  width: 100%;
-  padding: 80px 20px; box-sizing: border-box;
-}
 .c03 .ol_img{
   width: 35%;
   text-align: left;
@@ -733,8 +732,7 @@ path {
   transform: translate(20px,44px);
 }
 .c03 .or_img{
-  width: 65%; height: 390px;
-  transform: translateY(40px);
+  width: 60%; height: 450px;
 }
 .c03 .or_img figcaption:before,
 .c03 .or_img figcaption:after{
@@ -742,68 +740,49 @@ path {
 }
 
 /* 4. 포카리스웨트 콘텐츠 박스 수정 */
+.c04{
+  padding: 80px 60px;
+  box-sizing: border-box;
+}
 .c04 .ol_img{
-  text-align: left;
   width: 30%;
 }
 .c04 .ol_img p{margin-top: 20px;}
 
-.c04 .or_img{
-  width: 65%;
+.c04 .pocari_img{
+  width: 65%; height: 450px;
+  position: relative;
+  float: right;
 }
-.c04 .img {
+.c04 .pocari_img img{
+  width: 100%;
+  height: 100%;
+}
+.w_pocari, .b_pocari{
+  padding: 18px 30px;
   position: absolute; 
-  width:100%;
-  -webkit-transition: opacity 1s ease-in-out; 
-  -moz-transition: opacity 1s ease-in-out; 
-  -o-transition: opacity 1s ease-in-out; 
-  transition: opacity 1s ease-in-out; 
-  opacity: 0; 
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; 
-  filter: alpha(opacity=0); 
-}
-.c04 .img img{height: 432.3px;}
-.c04 .img:first-child {opacity: 1;}
-.c04 .img_btn{
-  transform: translate(50px,20px);
-}
-.c04 .img_btn button{
-  display: inline-block;
-  width: 90px; height: 90px;
-  border-radius: 50%;
-  border: none;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
+  z-index: 100;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 28px;
-  margin-right: 10px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  box-shadow: 2px 2px 4px rgb(129, 129, 129);
 }
-.c04 .img_btn button:hover{
-  background-color: #a4d3ff;
-  color: #fff;
+.w_pocari{
+  background: rgb(183, 196, 255);
+  left: -80px; bottom: 88px;
 }
-.swiper-pagination{
-  position: absolute;
-  top: 90%;
-  z-index: 1000;
+.b_pocari{
+  background: rgb(112, 133, 224);
+  left: -50px; bottom: 25px;
 }
-.c04 .or_img figcaption:before,
-.c04 .or_img figcaption:after{
-  width: 2000px;
-}
-.c04 .or_img figcaption{
-  bottom: 25px;
-  left: 25px;
-}
-
 /* contact */
 #contact{
    width: 100%;
-   transform: translateY(100px);
-   padding-bottom: 300px;
+   transform: translateY(200px);
+   padding-bottom: 100px;
+}
+#contact .p_btn{
+  font-size: 34px;
+  transform: translate(500px,-100px);
 }
 .c_all{
   width: 1200px; height: 100%;
@@ -908,9 +887,9 @@ form:hover input:hover[type=submit] {color:#3140ca;}
     width: 360px;
 }
 .last_bg p{
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bolder;
-    line-height: 24px;
+    line-height: 30px;
     text-align: center;
     transform: translateY(40px);
 }
@@ -921,7 +900,7 @@ form:hover input:hover[type=submit] {color:#3140ca;}
     font-size: 16px;
     font-weight: bold;
     position: absolute;
-    left: 40px; bottom: -150px;
+    left: 100px; bottom: 30px;
 }
 .last_bg a img{
   width: 120px;
