@@ -1,13 +1,13 @@
 @charset "utf-8";
 /* article4 - gallery */
 #design{
-    width:80%; height: 100%;
+    width:90%; height: 100%;
     margin:0px auto;
     transform: translateY(240px);
     padding-bottom: 100px;
 }
 #design > ul{
-    padding:20px;
+    padding:30px;
     display:flex;
     flex-wrap:wrap;
 }
@@ -15,7 +15,17 @@
     position:relative;
     overflow:hidden;
     width:25%;
-    height:190px;
+    height:200px;
+}
+#design > ul > li:nth-child(5), #design > ul > li:nth-child(6){
+    height:400px;
+}
+#design > ul > li:nth-child(7), #design > ul > li:nth-child(14){
+    width:50%;
+    height:400px;
+}
+#design > ul > li:nth-child(15), #design > ul > li:last-child{
+    transform: translateY(-200px);
 }
 #design > ul > li img{
     width:100%;

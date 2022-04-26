@@ -36,13 +36,26 @@
     /* 디자인 */
     #design{
         transform: translateY(-360px);
-        width: 100%;
+        width: 96%;
+    }
+    #design > ul > li{
+       height: 180px;
+    }
+   #design > ul > li:nth-child(14){
+        height:360px;
+    }
+    #design > ul > li:nth-child(15), #design > ul > li:last-child{
+        transform: translateY(-180px);
     }
     /* 이메일 */
     #contact{
-        transform: translateY(-140px);
+        transform: translateY(-200px);
         padding-bottom: 0;
     }
+    #contact .p_btn{
+        font-size: 34px;
+        transform: translate(500px,-350px);
+      }
     /* 에필로그 */
     .last_bg .b_img{top: -760px;}
     .last_bg p{
