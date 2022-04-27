@@ -21,11 +21,11 @@
     <script src="./script/prefixfree.min.js"></script>
     <script src="./script/jquery-3.6.0.js"></script>
     <!-- 화면전환(스티키) 효과 -->
-    <script src="./script/layout.js"></script>
+    <script defer src="./script/layout.js"></script>
     <!-- 인트로화면 효과 -->
-    <script src="./script/intro.js"></script>
+    <script defer src="./script/intro.js"></script>
     <!-- design : gallery -->
-    <script src="./script/gallery.js"></script>
+    <script defer src="./script/gallery.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -134,7 +134,7 @@
                     </div>
                     <!-- 프로필 우측 -->
                     <div class="p_right">
-                        <p class="big">&#33;important&#59;
+                        <p class="big">&#33;imfortant&#59;
                             <br><span></span>꾸준히 열린생각으로 발전 하는 것
                         </p>
                         <p>&#35; irreplaceable &#35; infinite &#35; exact &#35; collaborator</p>
@@ -479,11 +479,45 @@
 
         <!-- 아크틱 스크롤 -->
         <script src="./script/jquery.arctic_scroll.js"></script>
+        <script src="./script/jquery.cookie.js"></script>
         <script>
             $(function(){
         $(".arctic_scroll").arctic_scroll({
             speed: 800
         });
+    });
+
+     // 모달
+     let modal = `
+      <div class="modal">
+        <div>
+          <img src="./img/modalv2.png" alt="">
+          <input type="checkbox" id="ch"><label for="ch">오늘 하루 더이상 열지 않음</label>
+          <a href="#" title="닫기" id="c_btn"><span>close</span></a>
+        </div>
+      </div>
+    `;
+
+    $('body').append(modal); //바디태그의 안쪽 뒤에 내용을 추가
+
+    //1. 현재 브라우저에 쿠키파일이 존재한다면 모달창이 나오지 않게한다.
+    if($.cookie('popup')=='none'){
+      $('.modal').hide();
+    }
+
+    //2. 체크박스에 체크하고 닫기를 누르면 쿠키가 생성되고 모달창이 닫도록 한다.
+    let $ex = $('#ch'); //체크박스 변수
+
+    function closeModal(){
+      if($ex.is(':checked')){
+        $.cookie('popup', 'none', {expires:1, path:'/'}); //쿠키파일을 생성함
+      }
+      $('.modal').hide(); //모달 숨기기
+    }
+
+    //3. 그냥 닫기 버튼을 누른 경우 cloaseModal함수를 호출하여 쿠키생성유무를 따진다.
+    $('#c_btn').click(function(){
+      closeModal();
     });
         </script>
 </body>
