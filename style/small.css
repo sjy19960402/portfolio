@@ -49,18 +49,18 @@
     }
     /* 이메일 */
     #contact{
-        transform: translateY(-200px);
-        padding-bottom: 0;
+        transform: translateY(-400px);
+        height: 400px;
     }
     #contact .p_btn{
         font-size: 34px;
-        transform: translate(500px,-350px);
+        transform: translate(500px,-210px);
       }
     /* 에필로그 */
     .last_bg .b_img{top: -760px;}
+    .last_bg a{transform: translateY(400px);}
     .last_bg p{
         font-size: 24px;
-        transform: translateY(50px);
-        padding-bottom: 50px;
+        transform: translateY(400px);
     }
 }
