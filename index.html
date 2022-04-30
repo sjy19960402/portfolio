@@ -489,7 +489,7 @@
 
      // 모달
      let modal = `
-      <div class="modal">
+      <div id="modal">
         <div>
           <img src="./img/modalv2.png" alt="">
           <input type="checkbox" id="ch"><label for="ch">오늘 하루 더이상 열지 않음</label>
@@ -502,7 +502,7 @@
 
     //1. 현재 브라우저에 쿠키파일이 존재한다면 모달창이 나오지 않게한다.
     if($.cookie('popup')=='none'){
-      $('.modal').hide();
+      $('#modal').hide();
     }
 
     //2. 체크박스에 체크하고 닫기를 누르면 쿠키가 생성되고 모달창이 닫도록 한다.
@@ -512,7 +512,7 @@
       if($ex.is(':checked')){
         $.cookie('popup', 'none', {expires:1, path:'/'}); //쿠키파일을 생성함
       }
-      $('.modal').hide(); //모달 숨기기
+      $('#modal').hide(); //모달 숨기기
     }
 
     //3. 그냥 닫기 버튼을 누른 경우 cloaseModal함수를 호출하여 쿠키생성유무를 따진다.
